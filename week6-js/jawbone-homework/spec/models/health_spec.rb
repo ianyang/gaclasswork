@@ -1,0 +1,8 @@
+require 'spec_helper'
+
+describe Health do
+
+  it { should validate_presence_of :date}
+  it { should validate_presence_of :steps}
+
+end

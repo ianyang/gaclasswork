@@ -1,0 +1,8 @@
+<div class="result">
+	<h1>Results for: <%= @query%></h1>
+	<ol>
+		<% @movies.each do |movie| %>
+			<li><a href='/movie?id=<%=movie["imdbID"]%>'><%=movie["Title"]%></a></li>
+		<% end %>
+	</ol>
+<div>

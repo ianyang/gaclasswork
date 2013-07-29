@@ -1,0 +1,7 @@
+.artist_index img {
+	width: 100px;
+}
+
+.artist_show img, .painting_show img {
+	width: 250px;
+}

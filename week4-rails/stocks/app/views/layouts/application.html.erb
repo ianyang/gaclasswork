@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stocks</title>
+  <link rel="stylesheet" href="assets/normalize.css">
+  <link rel="stylesheet" href="assets/application.css">
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<%= link_to 'Back', :back %>
+<hr>
+
+<body>
+<%= yield %>
+</body>
+
+<hr>
+
+</html>

@@ -1,0 +1,96 @@
+<html>
+
+  <head>
+  </head>
+
+  <body>
+  </body>
+
+  <script>
+
+// calcualte triangles
+    function calculation(A, B, C) {
+      var s = (A+B+C)/2;
+      var T = Math.sqrt(s*(s-A)*(s-B)*(s-C));
+      console.log(T);
+    };
+    calculation(3, 4, 5);
+
+//  print favourite lists
+    var itemList = ["food", "drinks", "movies"];
+
+    function convertOrdinal(n) {
+      var digits = String(n).split('');
+      var last = digits.pop();
+      var penultimate = digits.pop();
+
+      if (penultimate === '1') {
+        return n + 'th';
+      } else if (last === '1') {
+        return n + 'st';
+      } else if (last === '2') {
+        return n + 'nd';
+      } else if (last === '3') {
+        return n + 'rd';
+      } else {
+        return n + 'th';
+      }
+    };
+
+    for (var i = 0; i < itemList.length; i++) {
+      var sentence = "My "+convertOrdinal(i+1)+" favourite item is "+itemList[i]+".";
+
+      console.log(sentence);
+    };
+
+// Big number
+
+  function returnBigger(a, b) {
+    if (a > b) {
+      return a;
+    } else if (a === b) {
+      return "they are the same";
+    } else if (a < b) {
+      return b;
+    } else {
+      return "not a number";
+    }
+  };
+  console.log(returnBigger(3, 4));
+
+// Calculator
+
+  function calculator() {
+    which = prompt("Choose what you want to do.\n1.Add\n2.Minus\n3.Multiply\n4.Divide\n5.Modulus\n6.Square Root");
+    firstNumber = parseFloat(prompt("Type in first number"));
+    secondNumber = parseFloat(prompt("Type in second number. Put 0 if square rooting"));
+
+    switch (which){
+      case "1":
+        return firstNumber + secondNumber;
+        break;
+      case "2":
+        return firstNumber - secondNumber;
+        break;
+      case "3":
+        return firstNumber * secondNumber;
+        break;
+      case "4":
+        return firstNumber / secondNumber;
+        break;
+      case "5":
+        return firstNumber % secondNumber;
+        break;
+      case "6":
+        return Math.sqrt(firstNumber);
+        break;
+      }
+
+  };
+
+  console.log(calculator());
+
+  </script>
+
+
+</html>

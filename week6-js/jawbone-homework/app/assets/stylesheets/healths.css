@@ -1,0 +1,65 @@
+body, html {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  width: 960px;
+  height: 80px;
+  text-align: center;
+  background: rgba(52, 73, 94,1.0);
+  margin: 0 auto;
+}
+
+.header h1 {
+  line-height: 80px;
+  font-weight: 200;
+  color: white;
+}
+
+.container {
+  overflow: hidden;
+  width: 960px;
+  margin: 0 auto;
+  border-top: 2px solid white;
+}
+
+.sidebar {
+  border-right: 2px solid white;
+  float: left;
+  width: 240px;
+  height: 600px;
+  background: rgba(41, 128, 185,1.0);
+}
+
+.presentation {
+  float: left;
+  height: 600px;
+  background: rgba(236, 240, 241,1.0);
+  width: calc(960px - 240px - 2px);
+}
+
+.presentation h3, .presentation p {
+  margin-left: 10px;
+}
+
+#weather, #jawbone {
+  width: 100%;
+  height: 200px;
+}
+
+.loading {
+  width: 150px;
+  margin: 0 auto;
+  display: none;
+}
+
+.sidebar button {
+  color: white;
+  background: rgba(0,0,0,0);
+  border: 2px solid white;
+  margin: 250px auto 0 auto;
+  display: block;
+}

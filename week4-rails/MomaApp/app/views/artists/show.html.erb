@@ -1,0 +1,19 @@
+<div class="artist_show">
+  <h1><%= @artist.name %></h1>
+  <%= image_tag(@artist.image) %><br>
+
+  <ul>
+    <li>Nationality: <%= @artist.nationality %></li>
+    <li>Date of Birth: <%= @artist.dob %></li>
+    <li>Period: <%= @artist.period %></li>
+  </ul>
+
+  <ul>
+  	<h3>Work</h3>
+  	<% @artist.paintings.each do |p| %>
+  	<li><%= link_to p.title, '/paintings/'+p.id.to_s %></li>
+  	<% end %>
+  </ul>
+
+  <%= link_to 'Edit', '/artists/'+@artist.id.to_s+'/edit' %>  <%= link_to 'Delete', @artist, :method => :delete %>
+</div>

@@ -1,0 +1,8 @@
+<div class="search">
+	<h1>search for a movie here</h1>
+	<%= form_tag(controller: 'movies', action: 'search', method: 'post') do %>
+		<%= text_field_tag 'search' %>
+		<!-- search will become the params key -->
+		<%= submit_tag 'Go' %>
+	<% end %>
+</div>

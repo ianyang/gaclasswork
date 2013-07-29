@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Haters</title>
+    <style type="text/css" media="screen">
+      #hater {
+        position: absolute;
+        -webkit-animation-direction: alternate;
+        -webkit-animation-duration: 3s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-name: hammertime;
+        -webkit-animation-timing-function: linear;
+      }
+      @-webkit-keyframes hammertime {
+        from {
+          left: 0;
+        }
+        to {
+          left: calc(100% - 250px);
+        }
+      }
+    </style>
+  </head>
+ <body>
+  <img style="position:absolute;" src="haters.gif" id="hater">
+ </body>
+</html>

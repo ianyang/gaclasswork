@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map-canvas { height: 100%; width: 70%; position: inline; float: left;}
+      #location-container { width: 30%; height: 100%; position: inline; float: left; overflow:hidden;}
+      #directionsPanel {padding-right: 20px;}
+    </style>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhecwIsLs-DjQRKgeO5ycziDhAswc7ofo&&libraries=places&sensor=true">
+    </script>
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+
+    <div id="location-container">
+      <div id="panel" onclick="calcRoute(home, generalAssembly);">Click <strong>HERE</strong> for Driving Directions To GA</div>
+      <div onclick="nearby();">Click <strong>HERE</strong> for nearby sushi places</div>
+      <div id="directionsPanel"></div>
+    </div>
+    <div id="map-canvas"></div>
+
+  </body>
+
+</html>

@@ -1,0 +1,7 @@
+<div class="results">
+	<h1>Result for <%= @symbol %></h1>
+	<p>Company: <%= @quote[@symbol].name %></p>
+	<p>Date: <%= @quote[@symbol].date %></p>
+	<p>High: $ <%= @quote[@symbol].dayHigh %></p>
+	<p>Closing: $ <%= @quote[@symbol].lastTrade %></p>
+</div>

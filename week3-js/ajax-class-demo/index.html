@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+ 
+  <head>
+    <title>Movies App</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <style>
+    body {
+      font-family: Helvetica;
+    }
+ 
+    li:hover {
+      background:yellow;
+      cursor: pointer;
+    }
+
+    .results, .movie-detail {
+      float: left;
+      width: 400px;
+    }
+
+    </style>
+  </head>
+ 
+  <body>
+ 
+    <!-- Form for searching -->
+    <form>
+      <input type="text" />
+      <button>Search</button>
+    </form>
+ 
+    <h1>Results</h1>
+ 
+    <!-- Where results will go -->
+    <div class="results"></div>
+ 
+    <!-- Where I'll put my movie details -->
+    <div class="movie-detail"></div>
+
+  </body>
+ 
+</html>

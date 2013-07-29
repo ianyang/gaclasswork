@@ -1,0 +1,13 @@
+<div class="items_show">
+  <h1><%= @item.title %></h1>
+  <%= image_tag(@item.image) %><br>
+
+  <ul>
+    <li><%= @painting.year %></li>
+    <li><%= @painting.medium %></li>
+    <li><%= @painting.style %></li>
+  </ul>
+
+  <%= link_to 'Edit', '/paintings/'+@painting.id.to_s+'/edit' %>  <%= link_to 'Delete', @painting, :method => :delete %>
+
+</div>

@@ -1,0 +1,11 @@
+<h1>There are our artists:</h1>
+<%= link_to 'Add', '/artists/new' %>
+
+<div = class="artist_index">
+  <% @artists.each do |a| %>
+    <%= link_to a.name, a %><br>
+    <%= image_tag(a.image) %>
+    <hr>
+  <% end %>
+</div>
+

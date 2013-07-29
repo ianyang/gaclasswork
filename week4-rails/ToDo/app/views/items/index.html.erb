@@ -1,0 +1,9 @@
+<div class="items">
+  <ul>
+    <h1>Things to do:</h1>
+    <% @items.each do |i| %>
+      <li><%= link_to i.name, p %></li>
+    <% end %>
+  </ul>
+  <%= link_to 'Add item', '/items/new' %>
+</div>
